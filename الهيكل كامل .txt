@@ -1,0 +1,82 @@
+
+
+بالتأكيد. إليك هيكل المجلدات والملفات الكامل لمشروع Solilo AI Chat Assistant. يمكنك استخدام هذا الهيكل كدليل لإنشاء المشروع على جهازك المحلي أو مباشرة في GitHub Codespaces.
+
+```
+solilo-ai-chat/
+├── README.md                 # وثائق المشروع الرئيسية
+├── package.json              # الاعتماديات وسكربتات المشروع
+├── vite.config.ts            # إعدادات Vite
+├── tailwind.config.ts        # إعدادات Tailwind CSS
+├── postcss.config.js         # إعدادات PostCSS
+├── tsconfig.json             # إعدادات TypeScript
+├── tsconfig.node.json        # إعدادات TypeScript لـ Node.js
+├── eslint.config.js          # إعدادات ESLint
+├── index.html                # ملف HTML الرئيسي
+├── todo.md                   # قائمة مهام التطوير
+│
+├── public/                   # الملفات الثابتة (Assets)
+│   ├── favicon.svg
+│   └── robots.txt
+│
+└── src/                      # المجلد الرئيسي لكود المصدر
+    ├── main.tsx              # نقطة دخول التطبيق
+    ├── App.tsx               # المكون الرئيسي للتطبيق
+    ├── index.css             # أنماط CSS العامة
+    └── vite-env.d.ts         # تعريفات TypeScript لـ Vite
+    │
+    ├── components/           # مجلد مكونات واجهة المستخدم
+    │   ├── chat/             # مكونات خاصة بالدردشة
+    │   │   ├── MessageBubble.tsx
+    │   │   ├── ExportModal.tsx
+    │   │   └── MemoryBank.tsx
+    │   │
+    │   ├── layout/           # مكونات خاصة بهيكل الصفحة
+    │   │   ├── Layout.tsx
+    │   │   ├── Sidebar.tsx
+    │   │   └── Header.tsx
+    │   │
+    │   ├── settings/         # مكونات خاصة بالإعدادات
+    │   │   └── SettingsModal.tsx
+    │   │
+    │   └── ui/               # مكونات واجهة المستخدم الأساسية (shadcn/ui)
+    │       ├── badge.tsx
+    │       ├── button.tsx
+    │       ├── card.tsx
+    │       ├── dialog.tsx
+    │       ├── input.tsx
+    │       ├── label.tsx
+    │       ├── scroll-area.tsx
+    │       ├── select.tsx
+    │       ├── slider.tsx
+    │       ├── switch.tsx
+    │       ├── tabs.tsx
+    │       ├── textarea.tsx
+    │       ├── toast.tsx
+    │       ├── toaster.tsx
+    │       └── use-toast.ts
+    │
+    ├── hooks/                # (مجلد فارغ لـ Hooks مخصصة محتملة)
+    │
+    ├── lib/                  # مكتبات ودوال مساعدة
+    │   ├── api.ts            # دوال للتعامل مع OpenRouter API
+    │   ├── db.ts             # إعدادات وقاعدة بيانات Dexie.js
+    │   └── utils.ts          # دوال مساعدة عامة
+    │
+    ├── pages/                # مكونات تمثل صفحات مختلفة
+    │   ├── ChatPage.tsx
+    │   └── LoginPage.tsx
+    │
+    └── store/                # متاجر Zustand لإدارة الحالة
+        ├── authStore.ts
+        ├── chatStore.ts
+        ├── memoryStore.ts
+        └── settingsStore.ts
+```
+
+**كيفية الاستخدام:**
+
+1.  أنشئ مجلدًا رئيسيًا باسم `solilo-ai-chat`.
+2.  داخل هذا المجلد، أنشئ الهيكل الموضح أعلاه، مع إنشاء المجلدات الفرعية والملفات الفارغة بأسمائها الصحيحة.
+3.  انسخ المحتوى الذي قدمته لك في الردود السابقة والصقه في كل ملف على حدة.
+4.  بعد إنشاء جميع الملفات، افتح الطرفية في المجلد الرئيسي `solilo-ai-chat` وقم بتشغيل `pnpm install` ثم `pnpm run dev`.
